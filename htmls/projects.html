@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nlewedim Uchechechukwu | Data Science Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/animation.css">
+    <link rel="stylesheet" href="/assets/css/pages.css">
+    <link rel="stylesheet" href="/assets/css/responsive.css">
+    <link rel="stylesheet" href="/assets/css/variables.css">
+    <link rel="stylesheet" href="/assets/css/component.css">
+
+    <script src="/assets/js/animation.js" defer></script>
+    <script src="/assets/js/contact.js" defer></script>
+    <script src="/assets/js/navigation.js" defer></script>
+    <script src="/assets/js/portfolio.js" defer></script>
+    <script src="/assets/js/theme.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="logo">Rocterity <span>AI</span></a>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#publications">Insight & Article</a></li>
+                    <li><a href="#connect">Connect</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">☀</button>
+                    <button class="menu-toggle" id="menuToggle">☰</button>
+                </div>
+            </nav>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#publications">Insight & Article</a>
+            <a href="#connect">Connect</a>
+        </div>
+</header>
+
+<main>
+    <section id="portfolio">
+    <div class="container">
+        <span class="eyebrow fade-up">— CASE STUDIES</span>
+        <h2 class="fade-up">Featured Projects</h2>
+        <p class="section-description">A collection of projects that showcase my ability to transform data into actionable insights...</p>
+        
+        <div class="filter-tabs fade-up">
+            <button class="filter-tab active" data-filter="all">ALL</button>
+            <button class="filter-tab" data-filter="ml">MACHINE LEARNING</button>
+            <button class="filter-tab" data-filter="nlp">NLP</button>
+            <button class="filter-tab" data-filter="cv">COMPUTER VISION</button>
+            <button class="filter-tab" data-filter="analytics">ANALYTICS</button>
+        </div>
+
+        <div class="project-grid">
+            <!-- Project 1: Machine Learning -->
+            <div class="project-card fade-up" data-category="ml" data-project="1">
+                <div class="project-header">
+                    <span class="project-category">MACHINE LEARNING</span>
+                    <h3>Predictive Churn Model</h3>
+                </div>
+                <div class="project-body">
+                    <p>Built an ensemble model to identify at-risk subscribers 30 days before churn.</p>
+                    <div class="tags"><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Airflow</span></div>
+                    <div class="project-metric">+32% Retention Lift</div>
+                    <div class="project-hint"><span>👁 Click anywhere on this card to view the full case study</span></div>
+                    <div class="project-links">
+                        <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" target="_blank"><i class="fas fa-arrow-up-right-from-square"></i> Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            <!-- [Repeat cards for Sentiment Analysis (NLP) and Quality Control Automation (Computer Vision)] -->
+        </div>
+    </div>
+</section>
+    
+</main>
+
+
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Rocterity AI</h2>
+                    <p>Turning data into insights and continuously learning one project at a time.</p>
+                </div>
+                <nav class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#portfolio">Projects</a>
+                    <a href="#connect">Contact</a>
+                </nav>
+                <div class="footer-social-wrapper">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/Nlewedim-uc" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Nlewedim Uchechukwu Miracle. Built with ❤️ using HTML, CSS & JavaScript.</p>
+                <a href="#top" class="back-top">↑ Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Utilities / Popups Component Group -->
+    <div class="toast" id="toast">Message sent successfully!</div>
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button id="modalClose" aria-label="Close modal">✕</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+</body>
+</html>

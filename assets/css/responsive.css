@@ -1,0 +1,311 @@
+/*======================================
+  MOBILE DEVICES (0px - 767px)
+======================================*/
+
+@media (max-width: 767px) {
+
+  /* ---------- Hero ---------- */
+
+  .hero {
+    min-height: auto;
+    padding: 80px 0;
+    text-align: center;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 650px;
+    margin-inline: auto;
+  }
+
+  .hero-image {
+    order: -1;
+  }
+
+  .hero-image::before {
+    display: none;
+  }
+
+  .role {
+    justify-content: center;
+  }
+
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .cta-group .btn,
+  .btn {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .hero-note {
+    justify-content: center;
+  }
+
+
+  /* ---------- About ---------- */
+
+  #about .eyebrow,
+  #about h2 {
+    text-align: center;
+  }
+
+  .about-content {
+    max-width: 700px;
+    margin-inline: auto;
+  }
+
+  .about-quote {
+    padding-left: 16px;
+    font-size: 1rem;
+  }
+
+  .code-block {
+    padding: 20px;
+    margin-top: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .code-block pre {
+    white-space: pre;
+  }
+
+
+  /* ---------- Contact ---------- */
+
+  #connect {
+    text-align: center;
+  }
+
+  #connect .eyebrow,
+  #connect .section-description {
+    text-align: center;
+  }
+
+  #connect .section-description {
+    margin: 0 auto 40px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .contact-card {
+    padding: 30px 24px;
+    text-align: center;
+  }
+
+  .contact-item {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  .form-message {
+    text-align: center;
+    font-size: .9rem;
+  }
+
+
+  /* ---------- Footer ---------- */
+
+  .footer {
+    padding: 60px 0 25px;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .footer-logo p {
+    margin: auto;
+  }
+
+  .footer-nav {
+    align-items: center;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+}
+
+
+/*======================================
+  TABLETS & SMALL LAPTOPS
+  (0px - 1023px)
+======================================*/
+
+@media (max-width: 1023px) {
+
+  /* ---------- Section Header ---------- */
+
+  .section-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    margin-bottom: 18px;
+  }
+
+  .section-description {
+    max-width: 100%;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+
+  /* ---------- Cards ---------- */
+
+  .card {
+    align-items: center;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .card-icon {
+    margin-inline: auto;
+  }
+
+  .tags {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .status {
+    justify-content: center;
+  }
+
+
+  /* ---------- Portfolio ---------- */
+
+  .filter-tabs {
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .filter-tab {
+    padding: 10px;
+    font-size: .85rem;
+  }
+
+  .project-header,
+  .project-body,
+  .project-hint {
+    text-align: center;
+  }
+
+  .project-category {
+    margin-inline: auto;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+
+}
+
+
+/*======================================
+  TABLETS (768px - 1199px)
+======================================*/
+
+@media (min-width:768px) {
+
+  /* Navigation */
+
+  .nav-links {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  /* Hero */
+
+  .hero-grid {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  /* Layout */
+
+  .section-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-grid-3 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .section-grid-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+}
+
+
+/*======================================
+  DESKTOP (1024px+)
+======================================*/
+
+@media (min-width:1024px) {
+
+  .container {
+    padding: 0 80px;
+  }
+
+}
+
+
+/*======================================
+  LARGE DESKTOP (1200px+)
+======================================*/
+
+@media (min-width:1200px) {
+
+  .section-grid-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .section-grid-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+}

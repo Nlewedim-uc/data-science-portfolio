@@ -1,0 +1,49 @@
+/*======================================
+  KEYFRAMES & INJECTIONS
+======================================*/
+
+@keyframes blink { 
+  50% { border-color: transparent; } 
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+@keyframes float { 
+  0%, 100% { transform: translateY(0); } 
+  50% { transform: translateY(-10px); } 
+}
+
+/*======================================
+  ANIMATED ENGINES
+======================================*/
+
+#typed-role {
+  animation: blink 1s infinite; 
+}
+
+.status::before {
+  animation: pulse 2s infinite;
+}
+
+.tech-bubble {
+  animation: float 3s ease-in-out infinite;
+}
+
+.tech-bubble:nth-child(odd) { 
+  animation-delay: 0.5s; 
+}
+
+/* message system */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

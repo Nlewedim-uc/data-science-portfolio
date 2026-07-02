@@ -1,0 +1,65 @@
+/*======================================
+  DEFAULT THEME (NAVY DARK)
+======================================*/
+
+:root{
+
+    --header-height:81px;
+
+    --bg:#0A192F;
+    --card:#112240;
+
+    --text:#CCD6F6;
+    --text-muted:#8892B0;
+
+    --border:rgba(100,255,218,.18);
+
+    --cyan:#64FFDA;
+    --cyan-hover:#9DFFF2;
+    --purple:#7F5AF0;
+
+}
+
+/*======================================
+  LIGHT MODE
+======================================*/
+
+body.light-mode{
+
+    --bg:#F8FAFC;
+
+    --card:#FFFFFF;
+
+    --text:#0A192F;
+
+    --text-muted:#475569;
+
+    --border:rgba(10,25,47,.10);
+
+}
+
+/*======================================
+  BLACK MODE
+======================================*/
+
+
+body.black-mode{
+
+    --bg:#050505;
+
+    --card:#111111;
+
+    --text:#F5F5F5;
+
+    --text-muted:#B8B8B8;
+
+    --border:rgba(255,255,255,.08);
+
+}
+
+body.black-mode header{
+    background: rgba(5, 5, 5, 0.95);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(255,255,255,.06);
+}
