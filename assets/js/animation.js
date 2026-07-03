@@ -49,3 +49,4 @@ const scrollObserver = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-up').forEach(el => scrollObserver.observe(el));
+

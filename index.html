@@ -95,7 +95,7 @@
                     <div class="hero-content">
                         <span class="eyebrow">— DATA SCIENCE • MACHINE LEARNING • AI</span>
                         <h1 class="hero-name">Nlewedim <span class="last">Uchechukwu Miracle</span></h1>
-                        <p class="tagline">"Where Data Tells Stories"</p>
+                        <p class="tagline">"Turning Data into Insights"</p>
 
                         <div class="roles">
                             <div class="role">
@@ -185,26 +185,36 @@
                     </article>
 
                     <!-- code snipet -->
-                    <aside class="code-block fade-up">
-                        <pre><code><span class="code-comment"># Data tells stories.</span>
-                            <span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+                     <aside class="code-block fade-up">
+<pre><code><span class="code-comment"># Student Performance Prediction</span>
 
-                            df = pd.read_csv(<span class="code-string">"data.csv"</span>)
+<span class="code-keyword">import</span> pandas <span class="code-keyword">as</span> pd
+<span class="code-keyword">from</span> sklearn.model_selection <span class="code-keyword">import</span> train_test_split
+<span class="code-keyword">from</span> sklearn.ensemble <span class="code-keyword">import</span> RandomForestClassifier
 
-                            insights = (
-                                df
-                                .groupby(<span class="code-string">"Category"</span>)
-                                .sum()
-                                .sort_values(
-                                    by=<span class="code-string">"Revenue"</span>,
-                                    ascending=<span class="code-keyword">False</span>
-                                )
-                            )
+<span class="code-comment"># Load dataset</span>
+df = pd.read_csv(<span class="code-string">"student_performance.csv"</span>)
 
-                            <span class="code-function">print</span>(insights.head())
+<span class="code-comment"># Features & target</span>
+X = df[[<span class="code-string">"Hours_Studied"</span>,
+        <span class="code-string">"Attendance"</span>,
+        <span class="code-string">"Sleep_Hours"</span>,
+        <span class="code-string">"Previous_Score"</span>]]
 
-                            <span class="code-comment"># Every dataset has a story waiting to be discovered.</span></code></pre>
-                    </aside>
+y = df[<span class="code-string">"Pass"</span>]
+
+<span class="code-comment"># Train model</span>
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y,
+    test_size=<span class="code-number">0.2</span>,
+    random_state=<span class="code-number">42</span>
+)
+
+model = RandomForestClassifier()
+model.fit(X_train, y_train)
+</code></pre>
+</aside>
+                   
                 </div>
             </div>
         </section>
@@ -576,7 +586,7 @@
             <div class="footer-content">
                 <div class="footer-logo">
                     <h2>NUM</h2>
-                    <p>Turning data into insights and continuously learning one project at a time.</p>
+                    <p>Turning data into insights through curiosity, continuous learning, and real-world projects.</p>
                 </div>
 
                 <nav class="footer-nav">
